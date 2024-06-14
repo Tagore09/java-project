@@ -5,14 +5,14 @@ document.addEventListener('DOMContentLoaded', function () {
     if (loginForm) {
         loginForm.addEventListener('submit', function (event) {
             event.preventDefault();
-            window.location.href = 'index.html';
+            window.location.href = 'courses.html';
         });
     }
 
     if (signupForm) {
         signupForm.addEventListener('submit', function (event) {
             event.preventDefault();
-            window.location.href = 'index.html';
+            window.location.href = 'courses.html';
         });
     }
 });
