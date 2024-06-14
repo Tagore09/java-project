@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses - E-Learn Platform</title>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body, html {
+            margin: 0;
+            font-family: 'Heebo', sans-serif;
+            color: #333;
+            background-color: #f8f9fa;
+            background-image: url('C:/Users/TUF/OneDrive/Pictures/blue-sky-background-3.png');
+           
+        }
+
+        .navbar {
+            background-color: #007bff;
+            padding: 10px 0;
+            color: rgb(27, 4, 4);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .navbar-brand {
+            color: #2252cd;
+            text-decoration: none;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .navbar-nav {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+        }
+
+        .navbar-nav a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 10px 15px;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbar-nav a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 4px;
+        }
+
+        .page-header {
+           
+            background-size: cover;
+            padding: 100px 0;
+            color: rgb(14, 1, 1);
+            text-align: center;
+        }
+
+        .page-header h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+
+        .section {
+            padding: 60px 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 36px;
+        }
+
+        .courses-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .course-item {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            flex: 1 1 calc(33.333% - 40px);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .course-item:hover {
+            transform: translateY(-10px);
+        }
+
+        .course-item h3 {
+            margin-top: 0;
+        }
+
+        .course-item p {
+            margin-bottom: 20px;
+        }
+
+        .course-item a {
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+        }
+
+        .reviews {
+            background: #f1f1f1;
+            padding: 40px 20px;
+            border-radius: 8px;
+        }
+
+        .review-item {
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #ddd;
+            padding: 20px 0;
+        }
+
+        .review-item:last-child {
+            border-bottom: none;
+        }
+
+        .review-item img {
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            margin-right: 20px;
+        }
+
+        .review-item h4 {
+            margin: 0 0 10px;
+        }
+
+        .review-item p {
+            margin: 0;
+        }
+
+        .review-item .rating {
+            color: #ffcc00;
+        }
+
+        .footer {
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .back-to-top {
+            display: inline-block;
+            padding: 10px 20px;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 4px;
+            background-color: rgba(255, 255, 255, 0.2);
+            transition: background-color 0.3s ease;
+        }
+
+        .back-to-top:hover {
+            background-color: rgba(255, 255, 255, 0.4);
+        }
+
+        .enroll-section {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: #007bff;
+            color: white;
+            border-radius: 8px;
+            margin-top: 40px;
+        }
+
+        .enroll-section a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            background-color: #ffcc00;
+            border-radius: 4px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .enroll-section a:hover {
+            background-color: #ff9900;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">E-Learn</a>
+            <ul class="navbar-nav">
+              
+                <li><a href="courses.html">Courses</a></li>
+            </ul>
+        </div>
+    </nav>
+    <header class="page-header">
+        <div class="container">
+            <h1>Our Courses</h1>
+        </div>
+    </header>
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">What We Offer</h2>
+            <p>At E-Learn, we provide a diverse range of courses designed to help you gain new skills and knowledge. Whether you're looking to advance your career, explore a new hobby, or enhance your existing skills, we have something for everyone. Our platform offers courses in various fields including technology, business, art, and more. Each course is designed by experts and includes comprehensive materials, interactive lessons, and practical assignments to ensure a thorough learning experience.</p>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Available Courses</h2>
+            <div class="courses-list">
+                <div class="course-item">
+                    <h3>Web Design</h3>
+                    <p>Learn the fundamentals of web design, including HTML, CSS, and JavaScript, to create stunning and responsive websites.</p>
+                    <a href="https://www.youtube.com/watch?v=j6Ule7GXaRs&list=PLXC_gcsKLD6n7p6tHPBxsKjN5hA_quaPI">Watch Video</a>
+                </div>
+                <div class="course-item">
+                    <h3>Artificial Intelligence with Python</h3>
+                    <p>Explore the world of AI and machine learning using Python. This course covers basic to advanced concepts and applications.</p>
+                    <a href="https://www.youtube.com/watch?v=gR8QvFmNuLE&list=PLhQjrBD2T381PopUTYtMSstgk-hsTGkVm">Watch Video</a>
+                </div>
+                <div class="course-item">
+                    <h3>Digital Marketing</h3>
+                    <p>Master the art of digital marketing, including SEO, social media marketing, content marketing, and more.</p>
+                    <a href="https://www.youtube.com/watch?v=nkNHn0VqVBA&list=PL9ooVrP1hQOH-nMMFeSG-DFwyATtUg4YA">Watch Video</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section reviews">
+        <div class="container">
+            <h2 class="section-title">Student Reviews</h2>
+            <div class="marquee">
+                <div class="marquee-inner">
+                    <div class="review-item">
+                        <img src="C:\Users\TUF\OneDrive\Pictures\avatar1b.jpg" alt="John Doe">
+                        <div>
+                            <h4>KRISHNA</h4>
+                            <div class="rating">★★★★★</div>
+                            <p>"The web design course was fantastic! The lessons were clear and easy to follow, and the assignments helped me build my first website from scratch.I would highly recommend this course to anyone interested in learning web design, whether for personal enrichment or professional development. It's comprehensive, well-structured, and taught by knowledgeable instructors who are passionate about their craft."</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-item">
+                    <img src="C:\Users\TUF\OneDrive\Pictures\th.jpeg" alt="Jane Smith">
+                    <div>
+                        <h4>AJAY</h4>
+                        <div class="rating">★★★★★</div>
+                        <p>"I took the AI course, and it was amazing. The instructor was knowledgeable, and I learned a lot about machine learning and neural networks. I wholeheartedly recommend this course to anyone interested in diving into artificial intelligence and machine learning with Python. Whether you're a beginner or looking to enhance your existing skills, the course structure and quality of instruction make it accessible and rewarding."</p>
+                    </div>
+                </div>
+                <div class="review-item">
+                    <img src="C:\Users\TUF\OneDrive\Pictures\th (2).jpeg" alt="Robert Brown">
+                    <div>
+                        <h4>VARUN</h4>
+                        <div class="rating">★★★★☆</div>
+                        <p>"The digital marketing course provided me with valuable insights and practical tips that I could apply to my business right away."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section enroll-section">
+    <div class="container">
+        <h2>Ready to Enroll?</h2>
+        <p>Join our platform and start learning today. Click the button below to enroll in your preferred course.</p>
+        <a href="enroll.html">Enroll Now</a>
+    </div>
+</section>
+</body>
+</html>
+
