@@ -9,7 +9,7 @@ function loginUser(event) {
     // Check credentials (This is just a simulation, replace with your actual authentication logic)
     if (username === 'user' && password === 'password') {
         // Redirect to main page after successful login
-        window.location.href = 'index.html';
+        window.location.href = 'courses.html';
     } else {
         alert('Invalid username or password. Please try again.');
     }
